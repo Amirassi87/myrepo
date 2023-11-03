@@ -1,0 +1,181 @@
+@font-face {
+  font-family: webFont;
+  src: url(Barlow-Regular.otf);
+}
+* {
+  box-sizing: border-box;
+}
+html body{
+  font-family: webFont, sans-serif;
+  background-color: #EFF6FF;
+  height: 100%;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  box-shadow: 1px 1px 20px 1px grey;
+}
+.col-2{
+    width: 100%;
+    flex:50%;
+}
+.img-bg{
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+.img-logo{
+  position: absolute;
+  width:100px;
+  height: 100px;
+  top:10px;
+  left:50px;
+}
+.row{
+  padding-left: 80px;
+  padding-top:80px;
+}
+.row p{
+  color: #2A4A5C;
+  font-size: 16px;
+}
+.soc-med{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20%;
+  margin-top: 8%;
+}
+.fb-btn{
+  color:white;
+  background-color: #255A9b;
+  border-color: white;
+  width:45%;
+  padding: 3%;
+  padding-right: 8%;
+}
+.fb-btn img{
+  width:8%;
+  margin-right: 12%;
+}
+.lnkedin-btn{
+  color:white;
+  background-color: #0076B6;
+  border-color: white;
+  width:45%;
+  padding: 3%;
+  padding-right: 8%;
+}
+.lnkedin-btn img{
+  width:8%;
+  margin-right: 12%;
+}
+.fb-btn:hover{
+  opacity: 0.5;
+}
+.lnkedin-btn:hover{
+  opacity: 0.5;
+}
+.line p{
+  display: inline-block;
+  text-align: center; 
+  padding-bottom: 20px; 
+  margin-right:5px;
+  margin-left:5px;
+}
+.front{
+  width: 20%;
+  display:inline-block;
+  margin-top: 10%;
+  margin-left: 23%;
+  margin-bottom: 6px;
+}
+.back{
+  display: inline-block;
+  width:20%;
+  margin-bottom: 6px;
+}
+.form{
+  display: flex;
+}
+.email,.phone{
+  border-style: groove;
+  border-color: #FFFFFF;
+  margin-right: 10%;
+  margin-top: 5%;
+  padding-top: 0;
+  flex: 50%;
+}
+.email input{
+  border: 0;
+  width:100%;
+  padding: 10px;
+}
+.email label,.phone label{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+.phone input{
+  border: 0;
+  width:100%;
+  height: 50%;
+}
+.qst{
+  margin-top: 10%;
+}
+.radio-box{
+  display: flex;
+  flex:25%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-right: 15%;
+  margin-top: 6%;
+  font-weight: bold;
+}
+.icon i{
+  margin-left: 5px;
+}
+.radio-box-desc{
+  margin-top: 8%;
+  margin-right: 51%;
+  box-shadow: 1px 1px 20px 1px rgb(232, 225, 225);
+}
+.radio-box-desc p{
+  padding: 5%;
+  color: #2A4A5C;
+}
+.aggrement{
+  margin-top: 8%;
+  color: #2A4A5C;
+}
+.create-acc-div{
+  margin-top: 8%;
+  margin-bottom: 8%;
+  margin-right: 5%;
+}
+.crt-acc-btn{
+  width: 50%;
+  padding:10px;
+  background-color: #3698FB;
+  color: white;
+  border-radius: 5px;
+  border-color: white;
+}
+.crt-acc-btn:hover{
+opacity: 0.5;
+}
+@media screen and (max-width: 600px) {
+  .col-2 {
+    flex: 100%;
+  }
+  .chkbox-desc{
+    margin-right: 30%;
+  }
+  .crt-acc-btn{
+    width:100%;
+  }
+}
